@@ -1,5 +1,5 @@
 #import the module
-using module "C:\Users\jean_\Google Drive\Visual Studio\Powershell\createFile.psm1"
+using module "C:\createFile.psm1"
 
 #Create new instance of class and pass the parameters for the constructor
 $obj = [CreateFile]::new("logs.txt", 50, "This is OOP in PowerShell")

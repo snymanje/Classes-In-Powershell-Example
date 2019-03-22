@@ -1,13 +1,11 @@
 # Classes-In-Powershell-Example
 An introduction to using classes in Powershell
 
-The release of Powershell 5 added classes to help simplify the way we write powershell code. Classes brings Object-Oriented Programming to Powershell, it helps us encapsulate and localize variables and methods by creating objects. Current Powershell scripts have a few common problems like code duplication and encapsulation issues were you are forced to clear or rename variables. We can improve on this using Object-Oriented Programming. Scripts that have hundreds of lines of code, can be split into modules using OOP.
+The release of Powershell 5 added classes to help simplify the way we write powershell code. Classes brings Object-Oriented Programming to Powershell, it helps us encapsulate and localize variables and methods by creating objects. Current Powershell scripts have a few common problems like code duplication and encapsulation issues were you are forced to clear or rename variables. We can improve on this with the use of classes. Scripts that have hundreds of lines of code, can be split into modules using OOP.
 Lets create a simple script to demonstrate OOP in powershell.
 
 
-
-
-First we need to create a module where we will add the class. So create a new file and call it createFile.psm1 then add the code below and save the file.
+First you need to create a module for the class. So create a new file and call it createFile.psm1 then add the code below.
 
 ```
 class CreateFile {
@@ -36,7 +34,7 @@ class CreateFile {
     //While counter is smaller that this.count write to output file
     [string] WriteToFile() {
         $counter = 0
-        ﻿while ($counter -lt $this.Count) {
+        while ($counter -lt $this.Count) {
             $this.text | Out-File $this.FileName -Append
             $counter++
         }
@@ -47,7 +45,7 @@ class CreateFile {
 
 
 
-The next step is to import this module in our main script file. Create a new file in the same directory and call it main.ps1 or anything you want. Add the below code and save the file.
+The next step is to import this module in your ps1 script file. Create a new file in the same directory and call it main.ps1 or anything you want. Add the below code and save the files.
 
 ```
 #import the module

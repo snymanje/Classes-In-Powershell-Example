@@ -1,7 +1,7 @@
 # Classes-In-Powershell-Example
 An introduction to using classes in Powershell
 
-The release of Powershell 5 added classes to help simplify the way we write powershell code. Classes brings Object-Oriented Programming to Powershell, it helps us encapsulate and localize variables and methods by creating objects. Current Powershell scripts have a few common problems like code duplication and encapsulation issues were you are forced to clear or rename variables. We can improve on this with the use of classes. Scripts that have hundreds of lines of code, can be split into modules using OOP.
+The release of Powershell 5 added classes to help simplify the way we write powershell code. Classes brings Object-Oriented Programming to Powershell, it helps us encapsulate and localize variables and methods by creating objects and promote code reusability. Current Powershell scripts have a few common problems like code duplication and encapsulation issues were you are forced to clear or rename variables. We can improve on this with the use of classes. Scripts that have hundreds of lines of code, can be split into modules using OOP.
 Lets create a simple script to demonstrate OOP in powershell.
 
 
